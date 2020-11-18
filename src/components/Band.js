@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class Band extends Component {
 
   render() {
+    // console.log(this.props)
     return(
       <div>
-        Band Component
+        <li>{this.props.band.name} <button onClick={this.props.deleteBand}>X</button></li>
       </div>
     );
   }
